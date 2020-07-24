@@ -1,0 +1,11 @@
+https://hackersandslackers.com/flask-wtforms-forms/
+
+** https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms
+
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
+
+https://flask.palletsprojects.com/en/1.1.x/patterns/sqlalchemy/
+
+https://flask.palletsprojects.com/en/1.1.x/tutorial/blog/
+
+https://docs.microsoft.com/en-us/azure/mysql/connect-python

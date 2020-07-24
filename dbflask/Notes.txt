@@ -1,0 +1,63 @@
+Flask orm by using CMD 
+-----------------------
+
+
+Step1:Import database instance name
+------------------------------------
+syntax:from module_name import db_instance_name
+Ex: from blog import db
+
+Step2:Create database columns by using database instance
+Syntax:db.create_all()
+
+The above syntax will create database columns by usig python classes which are in imported module
+
+step3: import database class which are in module
+
+syntax: from module_name import class_names
+------
+Ex:from blog import User,Post
+
+Step4:Perform some crud operations
+	creatin a new record:
+	---------------------
+	4.1 for creating a new record:
+		user_1 = User(username = 'narendra',email = 'narendra@gmail.com',password = 'password')
+		user_2 = User(username = 'ravi',email = 'ravi@gmail.com',password = 'password')
+	4.2 adding records to the database sessions
+		db.session.add(user_1)
+		db.session.add(user_2)
+	4.3 saving the session data into the database
+		db.session.commit()
+	
+	reading all records:
+	---------------------
+	4.4 reading all records by using all():
+		User.query.all()
+	4.5 reading all objects by using filter 
+		User.query.filter_by(username = 'narendra').all()
+	
+	updating a record
+	------------------------
+	4.6 updating a record by using previous record
+		previous_record = User.query.filter_by(id=1).first()
+		prvious_record.username='narendra natha reddy'
+		db.session.commit()
+		
+
+	delete a record:
+	----------------
+	4.7 deleating a record based on id number:
+		user = User.query.filter_by(id=1).first()
+		db.session.delete()
+		db.session.commit()
+	
+	
+
+
+
+
+
+
+
+
